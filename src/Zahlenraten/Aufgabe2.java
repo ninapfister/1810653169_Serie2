@@ -39,6 +39,11 @@ public class Aufgabe2
                 {
                 JOptionPane.showMessageDialog(null, "Deine Zahl ist nicht gleich!");
             }
+
+            if (i==2)
+            {
+                JOptionPane.showMessageDialog(null, "Ihre maximale Anzahl an Versuchen ist verbraucht!");
+            }
         }
     }
 }
