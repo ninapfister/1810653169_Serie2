@@ -26,5 +26,20 @@ public class Aufgabe5 {
                 }
             }
         }
+
+            do {
+                int rueckgabe = Integer.parseInt(JOptionPane.showInputDialog(null, "Gebe eine Zahl zwischen 1 und 10 ein"));
+                if (rueckgabe == zufallszahl) {
+                    JOptionPane.showMessageDialog(null,"Zahl erraten");
+                    break;
+                } else {
+                    i++;
+                    if (i > 2) {
+                        JOptionPane.showMessageDialog(null,"Keine Übereinstimmung mit der Zufallszahl: " + zufallszahl + "! Alle Versuche aufgebraucht!");
+                    } else {
+                        JOptionPane.showMessageDialog(null,"Keine Übereinstimmung mit der Zufallszahl.noch " + (3 - i) + " Versuche übrig.");
+                    }
+                }
+            } while (i < 3);
+        }
     }
-}
